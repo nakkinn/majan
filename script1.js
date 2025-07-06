@@ -17,7 +17,7 @@ const btn1 = document.getElementById("btn1");
 
 area1.addEventListener("pointerdown", ()=>{
     mode = 1;
-    score1p.textContent = "999";
+    input1.focus();
 });
 
 area2.addEventListener("pointerdown", ()=>{
@@ -34,7 +34,6 @@ area4.addEventListener("pointerdown", ()=>{
 
 
 area1.addEventListener("pointerup", ()=>{
-    score1p.textContent = "888";
     if(mode!=-1 && mode!=1){
         to = 1;
         input1.focus();
