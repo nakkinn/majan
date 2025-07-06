@@ -17,7 +17,6 @@ const btn1 = document.getElementById("btn1");
 
 area1.addEventListener("pointerdown", ()=>{
     mode = 1;
-    input1.focus();
 });
 
 area2.addEventListener("pointerdown", ()=>{
@@ -34,31 +33,19 @@ area4.addEventListener("pointerdown", ()=>{
 
 
 area1.addEventListener("pointerup", ()=>{
-    if(mode!=-1 && mode!=1){
-        to = 1;
-        input1.focus();
-    }
+    f1();
 });
 
 area2.addEventListener("pointerup", ()=>{
-    if(mode!=-1 && mode!=2){
-        to = 2;
-        input1.focus();
-    }
+    f1();
 });
 
 area3.addEventListener("pointerup", ()=>{
-    if(mode!=-1 && mode!=3){
-        to = 3;
-        input1.focus();
-    }
+    f1();
 });
 
 area4.addEventListener("pointerup", ()=>{
-    if(mode!=-1 && mode!=4){
-        to = 4;
-        input1.focus();
-    }
+    f1();
 });
 
 
@@ -90,3 +77,21 @@ input1.addEventListener("change", ()=>{
     update_text();
     mode = -1;
 });
+
+
+
+function f1(){
+    let num1 = prompt("移動する点数を入力してください");
+    num1 = Number(num1);
+
+    if(mode==1) score1 -= Number(num1);
+    if(mode==2) score2 -= Number(num1);
+    if(mode==3) score3 -= Number(num1);
+    if(mode==4) score4 -= Number(num1);
+    if(to==1)   score1 += Number(num1);
+    if(to==2)   score2 += Number(num1);
+    if(to==3)   score3 += Number(num1);
+    if(to==4)   score4 += Number(num1);
+
+    mode = -1;
+}
