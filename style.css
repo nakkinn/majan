@@ -1,0 +1,31 @@
+.container1{
+    background-color:#ddd;
+    width:40vw;
+    height:30vw;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;  /* 横方向中央 */
+    align-items: center;      /* 縦方向中央 */
+}
+
+
+.container1:active{
+    background-color:#aaa;
+}
+
+.container1:hover{
+    background-color:#aaa;
+}
+
+
+.score_text{
+    font-size:8vw;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
