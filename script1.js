@@ -15,75 +15,51 @@ const input1 = document.getElementById("input1");
 const btn1 = document.getElementById("btn1");
 
 
-area1.addEventListener("touchstart", ()=>{
+area1.addEventListener("pointerdown", ()=>{
     mode = 1;
 });
 
-area2.addEventListener("touchstart", ()=>{
+area2.addEventListener("pointerdown", ()=>{
     mode = 2;
 });
 
-area3.addEventListener("touchstart", ()=>{
+area3.addEventListener("pointerdown", ()=>{
     mode = 3;
 });
 
-area4.addEventListener("touchstart", ()=>{
+area4.addEventListener("pointerdown", ()=>{
     mode = 4;
 });
 
 
-area1.addEventListener("touchend", ()=>{
+area1.addEventListener("pointerup", ()=>{
     if(mode!=-1 && mode!=1){
         to = 1;
         input1.focus();
     }
 });
 
-area2.addEventListener("touchend", ()=>{
+area2.addEventListener("pointerup", ()=>{
     if(mode!=-1 && mode!=2){
         to = 2;
         input1.focus();
     }
 });
 
-area3.addEventListener("touchend", ()=>{
+area3.addEventListener("pointerup", ()=>{
     if(mode!=-1 && mode!=3){
         to = 3;
         input1.focus();
     }
 });
 
-area4.addEventListener("touchend", ()=>{
+area4.addEventListener("pointerup", ()=>{
     if(mode!=-1 && mode!=4){
         to = 4;
         input1.focus();
     }
 });
 
-
-
-//マウスリリース
-document.addEventListener("touchend", ()=>{
-    //mode = -1;
-});
-
-
-
-
-//promptで数値取得
-function f1(){
-    let num1 = null;
-    do{
-        let move_score = prompt("移動する点数を入力してください");
-        if(move_score !== null){
-            num1 = Number(move_score);
-        }else{
-            break;
-        }
-        if(isNaN(num1)) alert("数値を入力してください");
-    }while(isNaN(num1));
-    return num1;
-}
 
 
 //文字の更新
