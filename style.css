@@ -29,6 +29,7 @@
 button {
     border-radius:5px;
     border: 1px solid #777;
+    font-size:5vw;
 }
 
 input[type="text"],
