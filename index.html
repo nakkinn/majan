@@ -8,36 +8,238 @@
 </head>
 <body>
 
-    <p>ver1.4</p>
 
-    <div id="area1" class="container1">
-        <p id="score1" class="score_text">25000</p>
-    </div>
-
-    <div style="height:20px"></div>
-
-    <div style="display:flex">
-
-        <div id="area2" class="container1">
-            <p id="score2" class="score_text">25000</p>
+    <div class="container1">
+        <div style="display:flex;align-items:center">
+            <p id="player1_oya_flag" style="margin-right:20px;">親</p>
+            <p id="player1_name" style="margin-right:20px;">プレイヤー1（東）</p>
+            <p id="player1_score">25000点</p>
         </div>
 
-        <div id="area3" class="container1">
-            <p id="score3" class="score_text">25000</p>
+        <button id="player1_riichi_button">立直</button>
+        <button id="player1_agari_button">和了</button>
+    </div>
+
+
+    <div class="container1">
+        <div style="display:flex;align-items:center">
+            <p id="player2_oya_flag" style="margin-right:20px;">子</p>
+            <p id="player2_name" style="margin-right:20px;">プレイヤー2（南）</p>
+            <p id="player2_score">25000点</p>
+        </div>
+
+        <button id="player2_riichi_button">立直</button>
+        <button id="player2_agari_button">和了</button>
+    </div>
+
+
+    <div class="container1">
+        <div style="display:flex;align-items:center">
+            <p id="player3_oya_flag" style="margin-right:20px;">子</p>
+            <p id="player3_name" style="margin-right:20px;">プレイヤー3（西）</p>
+            <p id="player3_score">25000点</p>
+        </div>
+
+        <button id="player3_riichi_button">立直</button>
+        <button id="player3_agari_button">和了</button>
+    </div>
+
+
+    <div class="container1">
+        <div style="display:flex;align-items:center">
+            <p id="player4_oya_flag" style="margin-right:20px;">子</p>
+            <p id="player4_name" style="margin-right:20px;">プレイヤー4（北）</p>
+            <p id="player4_score">25000点</p>
+        </div>
+
+        <button id="player4_riichi_button">立直</button>
+        <button id="player4_agari_button">和了</button>
+    </div>
+
+    <div class="container1">
+        <div style="display:flex;align-items:center">
+            <p id="ba_flag" style="margin-right:20px;">リー棒</p>
+            <p id="ba_score">0点</p>
         </div>
     </div>
 
-    <div style="height:20px"></div>
-        
-    <div id="area4" class="container1">
-        <p id="score4" class="score_text">25000</p>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal_content">
+
+            <div style="margin-bottom:10px;">
+                <input type="radio" id="check_tsumo" name="agari_type" checked>
+                <label for="check_tsumo">ツモ</label>
+            </div>
+
+            <div id="container_player1_ron" style="margin-bottom:10px;">
+                <input type="radio" id="check_player1_ron" name="agari_type">
+                <label for="check_player1_ron" id="label_player1_ron">プレイヤー1　ロン</label>
+            </div>
+
+            <div id="container_player2_ron" style="margin-bottom:10px;">
+                <input type="radio" id="check_player2_ron" name="agari_type">
+                <label for="check_player2_ron" id="label_player2_ron">プレイヤー2　ロン</label>
+            </div>
+
+            <div id="container_player3_ron" style="margin-bottom:10px;">
+                <input type="radio" id="check_player3_ron" name="agari_type">
+                <label for="check_player3_ron" id="label_player3_ron">プレイヤー3　ロン</label>
+            </div>
+
+            <div id="container_player4_ron" style="margin-bottom:10px;">
+                <input type="radio" id="check_player4_ron" name="agari_type">
+                <label for="check_player4_ron" id="label_player4_ron">プレイヤー4　ロン</label>
+            </div>
+
+
+            <div style="height:10px;"></div>
+
+            <input type="radio" id="check_han1" name="han" checked>
+            <label for="check_han1">1翻　　</label>
+
+            <input type="radio" id="check_han2" name="han">
+            <label for="check_han2">2翻　　</label>
+
+            <input type="radio" id="check_han3" name="han">
+            <label for="check_han3">3翻　　</label>
+
+            <div style="height:10px;"></div>
+
+            <input type="radio" id="check_han4" name="han">
+            <label for="check_han4">4翻（満貫）　　　　</label>
+
+            <input type="radio" id="check_han5" name="han">
+            <label for="check_han5">5翻（満貫）</label>
+
+            <div style="height:10px;"></div>
+
+            <input type="radio" id="check_han6" name="han">
+            <label for="check_han6">6, 7翻（跳満）　　　</label>
+
+            <input type="radio" id="check_han8" name="han">
+            <label for="check_han8">8～10翻（倍満）</label>
+
+            <div style="height:10px;"></div>
+
+            <input type="radio" id="check_han11" name="han">
+            <label for="check_han11">11, 12翻（三倍満）　</label>
+
+            <input type="radio" id="check_han13" name="han">
+            <label for="check_han13">13翻（役満）</label>
+
+            <div style="height:10px;"></div>
+
+            <p id="idou_score">1000点all</p>
+
+            <div style="height:10px;"></div>
+
+            <button id="modal1_submit_button">確定</button>
+            <button id="modal1_close_button">キャンセル</button>
+
+        </div>
     </div>
 
-    <div style="height:20px;"></div>
 
-    <input id="input1" type="number">
-    <button id="btn1">確定</button>
-    <button id="btn2">キャンセル</button>
+    <div id="modal2" class="modal">
+        <div class="modal_content">
+
+            <p>聴牌</p>
+            
+            <div id="container_player1_tenpai" style="margin-bottom:10px;">
+                <input type="checkbox" id="check_player1_tenpai">
+                <label for="check_player1_tenpai" id="label_player1_tenpai">プレイヤー1</label>
+            </div>
+
+            <div id="container_player2_tenpai" style="margin-bottom:10px;">
+                <input type="checkbox" id="check_player2_tenpai">
+                <label for="check_player2_tenpai" id="label_player2_tenpai">プレイヤー2</label>
+            </div>
+
+            <div id="container_player3_tenpai" style="margin-bottom:10px;">
+                <input type="checkbox" id="check_player3_tenpai">
+                <label for="check_player3_tenpai" id="label_player3_tenpai">プレイヤー3</label>
+            </div>
+
+            <div id="container_player4_tenpai" style="margin-bottom:10px;">
+                <input type="checkbox" id="check_player4_tenpai">
+                <label for="check_player4_tenpai" id="label_player4_tenpai">プレイヤー4</label>
+            </div>
+
+            <button id="btn_ryukyoku_submit">確定</button>
+            <button id="btn_ryukyoku_cancel">キャンセル</button>
+        </div>
+    </div>
+
+
+
+    <div id="modal3" class="modal">
+        <div class="modal_content">
+
+            <p>プレイヤー名　　　　　　　　　　　親</p>
+            <label for="player1_name_input">東：　</label>
+            <input type="text" id="player1_name_input">
+            <input type="radio" id="player1_oya_input" name="oya" checked style="margin-left:40px;">
+
+            <div style="height:10px;"></div>
+
+            <label for="player2_name_input">南：　</label>
+            <input type="text" id="player2_name_input">
+            <input type="radio" id="player2_oya_input" name="oya" style="margin-left:40px;">
+
+            <div style="height:10px;"></div>
+
+            <label for="player3_name_input">西：　</label>
+            <input type="text" id="player3_name_input">
+            <input type="radio" id="player3_oya_input" name="oya" style="margin-left:40px;">
+
+            <div style="height:10px;"></div>
+
+            <label for="player4_name_input">北：　</label>
+            <input type="text" id="player4_name_input">
+            <input type="radio" id="player4_oya_input" name="oya" style="margin-left:40px;">
+
+            <div style="height:20px;"></div>
+
+            <p>点数</p>
+
+            <label for="player1_score_input">東：　</label>
+            <input type="number" id="player1_score_input">
+
+            <div style="height:10px;"></div>
+
+            <label for="player2_score_input">南：　</label>
+            <input type="number" id="player2_score_input">
+
+            <div style="height:10px;"></div>
+
+            <label for="player3_score_input">西：　</label>
+            <input type="number" id="player3_score_input">
+
+            <div style="height:10px;"></div>    
+
+            <label for="player4_score_input">北：　</label>
+            <input type="number" id="player4_score_input">
+
+            <div style="height:10px;"></div>
+
+            <label for="ba_score_input">リー棒：　</label>
+            <input type="number" id="ba_score_input">
+
+            <div style="height:20px;"></div>
+
+
+            <button id="modal3_submit_button">確定</button>
+            <button id="modal3_close_button">キャンセル</button>
+        </div>
+    </div>
+
+
+
+    <button id="btn_ryukyoku">流局</button>
+    <button id="btn_setting">設定</button>
+
 
     <script src="script1.js"></script>
 
