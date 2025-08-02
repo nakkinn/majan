@@ -659,15 +659,15 @@ function updateElements() {
     player3_name.textContent = name3 + "（西）";
     player4_name.textContent = name4 + "（北）";
 
-    document.getElementById("label_player1_ron").textContent = name1 + "（東）" + "　ロン";
-    document.getElementById("label_player2_ron").textContent = name2 + "（南）" + "　ロン";
-    document.getElementById("label_player3_ron").textContent = name3 + "（西）" + "　ロン";
-    document.getElementById("label_player4_ron").textContent = name4 + "（北）" + "　ロン";
+    document.getElementById("label_player1_ron").textContent = "ロン　" + name1 + "（東）";
+    document.getElementById("label_player2_ron").textContent = "ロン　" + name2 + "（南）";
+    document.getElementById("label_player3_ron").textContent = "ロン　" + name3 + "（西）";
+    document.getElementById("label_player4_ron").textContent = "ロン　" + name4 + "（北）";
 
-    document.getElementById("label_player1_tenpai").textContent = name1 + "（東）" + "　テンパイ";
-    document.getElementById("label_player2_tenpai").textContent = name2 + "（南）" + "　テンパイ";
-    document.getElementById("label_player3_tenpai").textContent = name3 + "（西）" + "　テンパイ";
-    document.getElementById("label_player4_tenpai").textContent = name4 + "（北）" + "　テンパイ";
+    document.getElementById("label_player1_tenpai").textContent = name1 + "（東）";
+    document.getElementById("label_player2_tenpai").textContent = name2 + "（南）";
+    document.getElementById("label_player3_tenpai").textContent = name3 + "（西）";
+    document.getElementById("label_player4_tenpai").textContent = name4 + "（北）";
 
     console.log(score1 + score2 + score3 + score4 + score5);
 }
